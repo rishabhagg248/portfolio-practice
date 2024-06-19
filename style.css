@@ -1,0 +1,112 @@
+body {
+    background-color: black;
+    font-family: 'PT Sans';
+    text-align: center;
+}
+
+img#pfp {
+    height: 250px;
+    width: 250px;
+    margin-top: 200px;
+    border: 5px solid white;
+    border-radius: 50%;
+}
+
+h1 {
+    color: white;
+    font-size: 37px;
+}
+
+h3 {
+    color: darkgrey;
+    font-size: 20px;
+}
+
+.sm {
+    height: 35px;
+    width: 35px;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+#navbar {
+    background-color: #333;
+    color: white;
+    float: left;
+    height: 100vh;
+    position: fixed;
+}
+
+#navbar > h1 {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-right: 130px;
+    margin-bottom: 150px;
+    font-size: 45px;
+    position: relative;
+    display: inline-block;
+}
+
+#navbar > h1 .tooltip{
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+    font-size: 15px;
+    top: 100%;
+    left: 50%;
+    margin-left: -60px;
+    padding: 5px;
+}
+
+#navbar > h1 .tooltip::after {
+    content: " ";
+    position: absolute;
+    bottom: 100%;  /* At the top of the tooltip */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent black transparent;
+  }
+
+#navbar > h1:hover .tooltip{
+    visibility: visible;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    text-align: left;
+    padding-left: 25px;
+    font-size: 20px;
+}
+
+hr {
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.selected {
+    color: red;
+}
+
+#content{
+    padding-left: 375px;
+}
